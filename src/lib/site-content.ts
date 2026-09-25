@@ -51,12 +51,12 @@ export const prestations: Prestation[] = [
   {
     slotId: "gmk-p2",
     categorie: "Femmes",
-    nom: "Box Braids",
-    prix: 85,
-    duree: "5 h",
+    nom: "Fulani Braids",
+    prix: 90,
+    duree: "4 h",
     description:
-      "Le classique intemporel, calibré section par section pour un tombé net et régulier.",
-    image: "/images/prestations/box-braids.jpg",
+      "Tresses collées façon fulani sur le dessus, prolongées en nattes libres et bouclées.",
+    image: "/images/prestations/fulani-braids.jpg",
   },
   {
     slotId: "gmk-p3",
@@ -71,31 +71,52 @@ export const prestations: Prestation[] = [
   {
     slotId: "gmk-p4",
     categorie: "Femmes",
-    nom: "Stitch Braids",
-    prix: 75,
+    nom: "Braided Ponytail",
+    prix: 70,
     duree: "3 h",
     description:
-      "Effet couture millimétré, lignes creusées à la perfection pour un résultat éditorial.",
+      "Tresses collées ramenées en queue-de-cheval haute, motif du cuir chevelu dessiné sur mesure.",
+    image: "/images/prestations/braided-ponytail.jpg",
   },
   {
     slotId: "gmk-p5",
-    categorie: "Hommes",
-    nom: "Tresses & Cornrows homme",
-    prix: 45,
-    duree: "1 h 30",
+    categorie: "Femmes",
+    nom: "Faux Locs",
+    prix: 90,
+    duree: "4 h",
     description:
-      "Coupe nette, tracés précis et finitions barbe en option. Entretien rapide, tenue impeccable.",
-    image: "/images/prestations/tresses-homme.jpg",
+      "Locs souples et légères pour un port longue durée, sans l'engagement de vraies locs.",
+    image: "/images/prestations/faux-locs.jpg",
   },
   {
     slotId: "gmk-p6",
-    categorie: "Perruques",
-    nom: "Pose & entretien perruque",
-    prix: 70,
+    categorie: "Femmes",
+    nom: "Twists Sénégalaises",
+    prix: 80,
+    duree: "3 h 30",
+    description:
+      "Torsades fines et régulières, légères sur le cuir chevelu, pour un rendu soyeux et intemporel.",
+    image: "/images/prestations/twists-senegalaises.jpg",
+  },
+  {
+    slotId: "gmk-p7",
+    categorie: "Femmes",
+    nom: "Freestyle Braids",
+    prix: 85,
+    duree: "3 h 30",
+    description:
+      "Tracés libres et perles au choix, pour une tresse signature qui sort des sentiers battus.",
+    image: "/images/prestations/freestyle-braids.jpg",
+  },
+  {
+    slotId: "gmk-p8",
+    categorie: "Soins",
+    nom: "Tissage Ouvert",
+    prix: 65,
     duree: "2 h",
     description:
-      "Customisation, pose invisible et remise en forme de vos closures et frontales.",
-    image: "/images/prestations/perruque.jpg",
+      "Pose de tissage à cheveux naturels laissés visibles, brushing lisse et brillant en finition.",
+    image: "/images/prestations/tissage-ouvert.jpg",
   },
 ];
 
@@ -111,44 +132,84 @@ export type Produit = {
 
 export const produits: Produit[] = [
   {
-    slotId: "gmk-pr1",
+    slotId: "gmk-pr5",
     categorie: "Cheveux",
-    nom: "Huile de pousse GMK",
-    prix: 24,
-    contenance: "100 ml",
+    nom: "Hair Wax Stick",
+    prix: 18,
+    contenance: "2.7 oz",
     description:
-      "Ricin noir, nigelle et menthe poivrée. Une application sur cuir chevelu propre, deux fois par semaine, pour densifier les zones fragilisées.",
-    image: "/images/produits/huile-de-pousse.jpg",
+      "Stick coiffant tenue forte pour discipliner les baby hairs et sublimer les finitions de tressage.",
+    image: "/images/produits/hair-wax-stick.jpg",
   },
   {
-    slotId: "gmk-pr2",
-    categorie: "Barbe",
-    nom: "GMK Repair Barbe",
-    prix: 22,
-    contenance: "50 ml",
-    description:
-      "Sérum réparateur pour barbe sèche et poils incarnés. Discipline le poil sans effet gras.",
-    image: "/images/produits/huile-de-barbe.jpg",
-  },
-  {
-    slotId: "gmk-pr3",
+    slotId: "gmk-pr6",
     categorie: "Cheveux",
-    nom: "Masque hydratation profonde",
-    prix: 28,
-    contenance: "250 ml",
+    nom: "Hold & Shine Wrap/Set Mousse",
+    prix: 21,
+    contenance: "200 ml",
     description:
-      "Beurre de karité brut et protéines de riz. Vingt minutes suffisent à retrouver de la souplesse avant tressage.",
-    image: "/images/produits/masque-hydratation.jpg",
+      "Mousse à l'huile de coco pour un wrap net, un séchage rapide et une brillance sans effet gras.",
+    image: "/images/produits/wrap-set-mousse.jpg",
   },
   {
-    slotId: "gmk-pr4",
+    slotId: "gmk-pr7",
     categorie: "Perruques",
-    nom: "Spray revitalisant perruque",
-    prix: 19,
-    contenance: "150 ml",
+    nom: "Ghost Bond",
+    prix: 26,
+    contenance: "1.3 oz / 38 ml",
     description:
-      "Démêle, rafraîchit et redonne du mouvement aux fibres naturelles comme synthétiques.",
-    image: "/images/produits/spray-perruque.jpg",
+      "Colle lace invisible et longue tenue pour une pose de perruque ou de frontale indétectable.",
+    image: "/images/produits/ghost-bond.jpg",
+  },
+  {
+    slotId: "gmk-pr8",
+    categorie: "Perruques",
+    nom: "Ease Off Lace Removal",
+    prix: 14,
+    contenance: "1 oz",
+    description:
+      "Dissolvant doux pour retirer colle et bande adhésive sans abîmer la lace ni le cuir chevelu.",
+    image: "/images/produits/ease-off-lace-removal.jpg",
+  },
+  {
+    slotId: "gmk-pr9",
+    categorie: "Cheveux",
+    nom: "Bonnet en satin GMK",
+    prix: 16,
+    contenance: "Taille unique",
+    description:
+      "Bonnet 100 % satin pour protéger tresses, twists et perruques pendant le sommeil.",
+    image: "/images/produits/bonnet-satin.jpg",
+  },
+  {
+    slotId: "gmk-pr10",
+    categorie: "Perruques",
+    nom: "Bande de maintien perruque",
+    prix: 12,
+    contenance: "Taille ajustable",
+    description:
+      "Bande élastique adhésive GMK Paris pour sécuriser toute pose de perruque ou de lace, jour et nuit.",
+    image: "/images/produits/bande-maintien-perruque.jpg",
+  },
+  {
+    slotId: "gmk-pr12",
+    categorie: "Extensions",
+    nom: "Extension Brésilienne Body Wave",
+    prix: 65,
+    contenance: "Lot de 3, 100 % naturel",
+    description:
+      "Cheveux naturels vierges ondulés body wave, pour un tissage ou une extension à la texture homogène.",
+    image: "/images/produits/extension-bresilienne-body-wave.jpg",
+  },
+  {
+    slotId: "gmk-pr13",
+    categorie: "Extensions",
+    nom: "Tissage Brésilienne Deep Wave",
+    prix: 70,
+    contenance: "Lot de 3, 100 % naturel",
+    description:
+      "Cheveux naturels vierges bouclés deep wave, tenue longue durée et brillance naturelle.",
+    image: "/images/produits/tissage-bresilienne-deep-wave.jpg",
   },
 ];
 
@@ -224,11 +285,14 @@ export type GalleryItem = {
 };
 
 export const galerie: GalleryItem[] = [
-  { slotId: "gmk-g1", label: "Knotless Braids", image: "/images/prestations/knotless-braids.jpg" },
-  { slotId: "gmk-g2", label: "Box Braids", image: "/images/prestations/box-braids.jpg" },
-  { slotId: "gmk-g3", label: "Cornrows", image: "/images/prestations/cornrows.jpg" },
-  { slotId: "gmk-g4", label: "Tresses homme", image: "/images/prestations/tresses-homme.jpg" },
-  { slotId: "gmk-g5", label: "Pose perruque", image: "/images/prestations/perruque.jpg" },
+  { slotId: "gmk-g1", label: "Fulani Braids perlées", image: "/images/gallery/fulani-braids-2.jpg" },
+  { slotId: "gmk-g2", label: "Fulani Braids Jayda Wayda", image: "/images/gallery/fulani-braids-jayda-wayda.jpg" },
+  { slotId: "gmk-g3", label: "Braided Ponytail", image: "/images/gallery/braided-ponytail-face.jpg" },
+  { slotId: "gmk-g4", label: "Knotless vue de dessus", image: "/images/gallery/knotless-vue-dessus.jpg" },
+  { slotId: "gmk-g5", label: "Knotless lisses", image: "/images/gallery/knotless-lisse.jpg" },
+  { slotId: "gmk-g6", label: "Twists sénégalaises", image: "/images/gallery/twists-realisation.jpg" },
+  { slotId: "gmk-g7", label: "Twists bouclées", image: "/images/gallery/twists-bouclees.jpg" },
+  { slotId: "gmk-g8", label: "Faux Locs profil", image: "/images/gallery/faux-locs-profil.jpg" },
 ];
 
 export const founder = {

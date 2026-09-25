@@ -29,18 +29,20 @@ export function PrestationsSection() {
           <a
             key={p.slotId}
             href="#reservation"
-            className="flex flex-col overflow-hidden rounded-gmk border border-ink/13 transition-colors hover:border-accent"
+            className="flex h-full flex-col overflow-hidden rounded-gmk border border-ink/13 transition-colors hover:border-accent"
           >
             <div className="relative aspect-[4/5]">
               <SlotImage src={p.image} alt={p.nom} label={p.nom} />
             </div>
-            <div className="flex flex-col gap-2.5 px-[22px] pt-6 pb-[26px]">
+            <div className="flex flex-1 flex-col gap-2.5 px-[22px] pt-6 pb-[26px]">
               <span className="text-[10px] uppercase tracking-[0.26em] text-accent">
                 {p.categorie}
               </span>
-              <h3 className="m-0 font-serif text-[26px] font-normal">{p.nom}</h3>
-              <p className="m-0 text-sm leading-[1.65] text-ink/62">{p.description}</p>
-              <div className="mt-2 flex items-baseline justify-between gap-3 border-t border-ink/13 pt-4">
+              <h3 className="m-0 line-clamp-1 font-serif text-[26px] font-normal">{p.nom}</h3>
+              <p className="m-0 line-clamp-2 min-h-[47px] text-sm leading-[1.65] text-ink/62">
+                {p.description}
+              </p>
+              <div className="mt-auto flex items-baseline justify-between gap-3 border-t border-ink/13 pt-4">
                 <span className="text-[13px] text-ink">À partir de {p.prix} €</span>
                 <span className="text-[11px] uppercase tracking-[0.18em] text-ink/62">
                   {p.duree}

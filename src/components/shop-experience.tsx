@@ -38,7 +38,7 @@ export function ShopExperience() {
 
           <div className="grid gap-[22px] [grid-template-columns:repeat(auto-fit,minmax(275px,1fr))]">
             {produits.map((pr) => (
-              <div key={pr.slotId} className="flex flex-col gap-3.5">
+              <div key={pr.slotId} className="flex h-full flex-col gap-3.5">
                 <div className="relative aspect-square overflow-hidden rounded-gmk border border-ink/13">
                   <SlotImage src={pr.image} alt={pr.nom} label={pr.nom} />
                   <button
@@ -49,11 +49,13 @@ export function ShopExperience() {
                     Aperçu rapide
                   </button>
                 </div>
-                <div className="flex flex-col gap-1.5">
+                <div className="flex flex-1 flex-col gap-1.5">
                   <span className="text-[10px] uppercase tracking-[0.24em] text-accent">
                     {pr.categorie}
                   </span>
-                  <h3 className="m-0 font-serif text-[21px] font-normal">{pr.nom}</h3>
+                  <h3 className="m-0 line-clamp-2 min-h-[52px] font-serif text-[21px] font-normal">
+                    {pr.nom}
+                  </h3>
                   <span className="text-[13px] text-ink/62">
                     {formatPrice(pr.prix)} · {pr.contenance}
                   </span>

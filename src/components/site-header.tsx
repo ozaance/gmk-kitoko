@@ -9,10 +9,10 @@ export function SiteHeader() {
         <Image
           src="/images/gmk-logo.png"
           alt="GMK Kitoko Paris"
-          width={54}
-          height={54}
+          width={1062}
+          height={597}
           priority
-          className="h-[54px] w-auto"
+          className="h-[46px] w-auto"
         />
       </Link>
 

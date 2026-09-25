@@ -63,9 +63,9 @@ export function SiteFooter() {
           <Image
             src="/images/gmk-logo.png"
             alt="GMK Kitoko Paris"
-            width={68}
-            height={68}
-            className="h-[68px] w-[68px] self-start object-contain"
+            width={1062}
+            height={597}
+            className="h-[58px] w-auto self-start object-contain"
           />
           <p className="m-0 max-w-[26ch] font-serif text-[17px] italic text-bg/62">
             {siteCopy.slogan}
